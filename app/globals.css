@@ -102,10 +102,32 @@ nav .menu-button {
 
 .content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the content */
   color: white;
   text-align: center;
   z-index: 1; /* Places the content above the video */
+}
+
+h1 {
+  line-height: 76px;
+  padding-bottom: 5px;
+  font: 700 52px / 58px 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+h3 {
+  font: 700 35px / 40px 'Montserrat', Helvetica, Arial, sans-serif
+}
+
+h3 em {
+  font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.content2 {
+  position: absolute;
 }
