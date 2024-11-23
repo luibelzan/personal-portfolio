@@ -86,7 +86,7 @@ nav .menu-button {
 .video-background {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full screen height */
+  height: 90vh; /* Full screen height */
   overflow: hidden;
 }
 
@@ -130,4 +130,41 @@ h3 em {
 
 .content2 {
   position: absolute;
+}
+
+.serviceCard {
+  background: linear-gradient(135deg, #007BFF, #0056D2); /* Degradado azul */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+  color: white; /* Texto blanco */
+  padding: 24px; /* Espaciado interno */
+  text-align: center; /* Centrar texto */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px); /* Efecto de levantamiento */
+  box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.3); /* Intensificar sombra */
+}
+
+.serviceCard h3 {
+  font-size: 1.75rem; /* Título más grande */
+  font-weight: 700; /* Negrita */
+  color: #ffffff; /* Título en blanco */
+  margin-bottom: 12px; /* Espaciado entre título y descripción */
+}
+
+.serviceCard p {
+  font-size: 1rem; /* Tamaño estándar del texto */
+  color: #cfe2ff; /* Azul claro para contraste */
+  margin: 20px; /* Sin márgenes adicionales */
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+h2 {
+  color: #1E3A8A;
+}
+
+h4 {
+  color: #1E3A8A;
 }
