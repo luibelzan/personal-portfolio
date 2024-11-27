@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { use, useState } from "react";
 
 interface ServiceCardProps {
     title: string;
@@ -7,12 +7,13 @@ interface ServiceCardProps {
     detailedInfo: string;
     services: Array<string>;
     titleTools: string,
-    tools: Array<string>;
+    tools: Array<{ logo: string, name: string }>;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, detailedInfo, services, titleTools, tools }) => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [hoveredTool, setHoveredTool] = useState<string | null>(null);
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
@@ -50,7 +51,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, detailedI
                     <h4 className="text-xl font-bold mb-2">{titleTools}</h4>
                     <ul className="tools-list">
                         {tools.map((tool, index) => (
-                            <li className="list-tool" key={index}><img className="max-w-20 p-1" src={tool}></img></li>
+                            <li className="list-tool relative" key={index} onMouseEnter={() => setHoveredTool(tool.name)} onMouseLeave={() => setHoveredTool(null)}><img className="max-w-20 p-1" src={tool.logo} alt={tool.name}></img>
+                            {hoveredTool === tool.name && (
+                                <div className="tooltip">{tool.name}</div>
+                            )}
+                            </li>
                         ))}
                     </ul>
                     <button

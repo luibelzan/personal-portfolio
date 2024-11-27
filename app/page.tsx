@@ -10,7 +10,7 @@ const services = [
     detailedInfo: "Especializados en crear la arquitectura y logica que impulsa tu aplicacion desde el nucleo. Este servicio abarca el dise;o, desarrollo y mantenimiento del sistema que opera detras de escena, asegurando un rendimiento optimo, seguridad y confiablidad.",
     services: ['Automatizacion de procesos y tareas para optimizar recursos y tiempo', 'Integracion eficiente de bases de datos, garantizando acceso rapido y seguro a la informacion', 'Creacion de APIs solidas para la interaccion entre el cliente y el servidor', 'Implementacion de sistemas escalables que puedan crecer junto a tu negocio'],
     titleTools: 'Lenguajes de programacion',
-    tools: ['java.png', 'javascript.png', 'typescript.png', 'python.png', 'html.png', 'sql.png'],
+    tools: [{logo: 'java.png', name: 'Java'}, {logo: 'javascript.png', name:'Javascript'}, {logo: 'typescript.png', name: 'Typescript'}, {logo:'python.png', name:'Python'}, {logo:'html.png', name:'HTML'}, {logo:'sql.png', name:'SQL'}],
   },
   {
     title: "Desarrollo web",
@@ -18,7 +18,7 @@ const services = [
     detailedInfo: "El desarrollo web se centra en la creacion de interfaces de usuario interactivas y atractivas, donde la experiencia del usuario es clave. Transformamos dise;os en experiencias digitales funcionales utilizando tecnologias como HTML, CSS, Javascript y frameworks modernos como React o Angular.",
     services: ['Creacion de sitios web rapidos y eficientes mediante la optimizacion del rendimiento', 'Implementacion de animaciones, transiciones y efectos visuales que mejoran la experiencia de usuario', 'Dise;o de interfaces adaptables a diferentes dispositivos y tama;os de pantalla'],
     titleTools: 'Frameworks de desarrollo',
-    tools: ['react.png', 'spring.png', 'nextjs.png', 'angular.png', 'django.png'],
+    tools: [{logo:'react.png', name:'Reactjs'}, {logo:'spring.png', name: 'Spring'}, {logo:'nextjs.png', name:'Nextjs'}, {logo:'angular.png', name:'Angular'}, {logo:'django.png', name:'Django'}],
   },
   {
     title: "Gestion de proyectos",
@@ -26,7 +26,7 @@ const services = [
     detailedInfo: "La gestion de proyectos es clave para garantizar el exito de cualquier desarrollo tecnologico. Combinamos practicas agiles y tradicionales para garantizar una planificacion eficiente, una ejecucion fluida y una entrega exitosa. Aseguramos que cada etapa del proyecto este cuidadosamente gestionada y alineada con las expectativas del cliente y las necesidades del mercado.",
     services: ['Definicion clara de objetivos, hitos y cronogramas para asegurar una ejecucion efectiva', 'Implementacion de metodologias agiles como Scrum para una gestion flexible y centrada en el cliente', 'Supervision de entregables para garantizar que cumplan con altos estandares de calidad y funcionalidad'],
     titleTools: 'Herramientas de gestion',
-    tools: ['trello.png', 'github.png', 'microsoftproject.png', 'teams.png', 'lunacy.png'],
+    tools: [{logo:'trello.png', name:'Trello'}, {logo:'github.png', name: 'Github'}, {logo:'microsoftproject.png', name:'Microsoft Projects'}, {logo:'teams.png', name:'Microsoft Teams'}, {logo:'lunacy.png', name:'Lunacy'}],
   },
 ];
 
