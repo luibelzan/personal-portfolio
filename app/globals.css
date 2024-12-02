@@ -318,22 +318,41 @@ h4 {
 
 /*Estilos contactame*/
 .contact-container {
-  background-image: url('../public/prueba.png');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
-  background-color: blue;
-
+  background-color: rgba(0, 0, 255, 0.208); /* Azul con opacidad */
+  background-image: url('../public/contacta.png');
+  background-blend-mode: overlay; /* Combina imagen y color */
+  background-size: cover; /* Asegura que la imagen cubra todo el div */
+  background-repeat: no-repeat; /* Evita repeticiones de la imagen */
+  height: 50vh;
+  align-items: center;
 }
 
 .contact-section {
-  background-color: blue;
   width: 100%;
-  opacity: 50%;
 }
 
 .email-container {
   border: 1px solid white;
   border-radius: 50px;
   margin-bottom: 10px;
+}
+
+
+/*Estilos footer*/
+footer {
+  background-color: rgb(2 4 91);
+  color: #ffffff;           /* Texto blanco */
+  width: 100%;
+}
+
+footer a img {
+  transition: transform 0.3s ease;
+}
+
+footer a img:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+footer p span {
+  color: #60A5FA; /* Azul claro para resaltar */
 }
