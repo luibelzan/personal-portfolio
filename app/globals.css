@@ -316,3 +316,24 @@ h4 {
 
 
 
+/*Estilos contactame*/
+.contact-container {
+  background-image: url('../public/prueba.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-color: blue;
+
+}
+
+.contact-section {
+  background-color: blue;
+  width: 100%;
+  opacity: 50%;
+}
+
+.email-container {
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
