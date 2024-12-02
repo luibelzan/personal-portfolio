@@ -293,5 +293,26 @@ h4 {
   visibility: visible;
 }
 
+.projects {
+  background: linear-gradient(to bottom, #d3cdcd, #e6f7ff)
+}
+
+.project-image {
+  max-height: 100%;
+  height: 100%;
+}
+
+.project-card {
+  border: 1px solid gray;
+}
+
+.slider-container {
+  height: 850px;
+}
+
+.image-container {
+  height: 85%;
+}
+
 
 

@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Head from "next/head";
 import ServiceCard from "./components/serviceCard";
+import ProjectSlider from "./components/projectSlider";
 
 const services = [
   {
@@ -29,6 +30,8 @@ const services = [
     tools: [{logo:'trello.png', name:'Trello'}, {logo:'github.png', name: 'Github'}, {logo:'microsoftproject.png', name:'Microsoft Projects'}, {logo:'teams.png', name:'Microsoft Teams'}, {logo:'lunacy.png', name:'Lunacy'}],
   },
 ];
+
+
 
 export default function Home() {
   return (
@@ -67,8 +70,13 @@ export default function Home() {
         </div>
 
         {/*Div de works*/}
-        <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
-            <p>Prueba</p>
+        <div className="projects flex flex-col justify-center items-center w-full">
+          <div className="container py-16 px-8 flex justify-center flex-col">
+            <h2 className="text-3xl font-bold text-center mb-5">Proyectos</h2>
+            <div className="slider-container flex justify-center w-full">
+              <ProjectSlider/>
+            </div>
+          </div>
         </div>
 
 
