@@ -212,6 +212,8 @@ h4 {
   max-width: 600px; /* Ancho máximo del modal */
   width: 90%; /* Ancho responsivo */
   animation: fadeIn 0.3s ease-in-out; /* Animación de aparición */
+  max-height: 90vh; /* Máxima altura para que el modal no exceda la pantalla */
+  overflow-y: auto;
 }
 
 .modal-button {
@@ -304,6 +306,20 @@ h4 {
 
 .project-card {
   border: 1px solid gray;
+}
+
+@media (max-width: 1920px) {
+  .section {
+      font-size: 1rem;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .section {
+      font-size: 0.9rem;
+      padding: 8px;
+  }
 }
 
 .slider-container {
