@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Head from "next/head";
 import ServiceCard from "./components/serviceCard";
+import ProjectSlider from "./components/projectSlider";
+import Footer from "./components/footer";
 
 const services = [
   {
@@ -29,6 +31,8 @@ const services = [
     tools: [{logo:'trello.png', name:'Trello'}, {logo:'github.png', name: 'Github'}, {logo:'microsoftproject.png', name:'Microsoft Projects'}, {logo:'teams.png', name:'Microsoft Teams'}, {logo:'lunacy.png', name:'Lunacy'}],
   },
 ];
+
+
 
 export default function Home() {
   return (
@@ -67,6 +71,42 @@ export default function Home() {
         </div>
 
         {/*Div de works*/}
+        <div className="projects flex flex-col justify-center items-center w-full">
+          <div className="container py-16 px-8 flex justify-center flex-col">
+            <h2 className="text-3xl font-bold text-center mb-5">Proyectos</h2>
+            <div className="slider-container flex justify-center w-full">
+              <ProjectSlider/>
+            </div>
+          </div>
+        </div>
+
+        {/*Div de contacto*/}
+        <div className="contact-container flex w-full justify-center">
+          
+            <section className="contact-section flex flex-col items-center">
+              <div className="container py-16 px-8 flex justify-center flex-col items-center">
+              <h2 className="text-white font-extrabold p-2 text-3xl">Contáctame</h2>
+              <p className="text-white pb-2 text-xl">¿Quieres colaborar o tienes alguna pregunta? No dudes en ponerte en contacto conmigo.</p>
+              <div className="email-container p-1">
+                <p className="text-xl">📧 <a href="mailto:luibelzan@outlook.com">luibelzan@outlook.com</a></p>
+              </div>
+              <div className="social-links flex flex-row pb-5">
+                <a href="https://www.linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
+                  <img src="linkedin.png" alt="LinkedIn Logo" className="max-w-16"/>
+                </a>
+                <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
+                  <img src="github.png" alt="GitHub Logo" className="max-w-16"/>
+                </a>
+              </div>
+              </div>
+            </section>
+          </div>
+
+          <div className="footer-container w-full">
+            <Footer/>
+          </div>
+
+
 
 
       </div>
