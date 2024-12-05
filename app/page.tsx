@@ -84,6 +84,7 @@ export default function Home() {
         <div className="contact-container flex w-full justify-center">
           
             <section className="contact-section flex flex-col items-center">
+              <div className="container py-16 px-8 flex justify-center flex-col items-center">
               <h2 className="text-white font-extrabold p-2 text-3xl">Contáctame</h2>
               <p className="text-white pb-2 text-xl">¿Quieres colaborar o tienes alguna pregunta? No dudes en ponerte en contacto conmigo.</p>
               <div className="email-container p-1">
@@ -96,6 +97,7 @@ export default function Home() {
                 <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
                   <img src="github.png" alt="GitHub Logo" className="max-w-16"/>
                 </a>
+              </div>
               </div>
             </section>
           </div>
