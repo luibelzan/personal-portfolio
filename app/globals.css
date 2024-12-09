@@ -302,6 +302,12 @@ h4 {
   visibility: visible;
 }
 
+@media (max-width: 426px) {
+  .tool-image {
+      max-width: 3rem !important;
+  }
+}
+
 /* Estilo projects*/
 
 .projects {
