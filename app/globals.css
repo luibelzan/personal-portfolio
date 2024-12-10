@@ -67,21 +67,6 @@ nav .menu-button {
   display: none;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-  }
-
-  nav.open ul {
-    display: flex;
-  }
-
-  nav .menu-button {
-    display: block;
-  }
-}
-
 /* HOME PAGE STYLES */
 .video-background {
   position: relative;
@@ -169,13 +154,6 @@ h2 {
 
 h4 {
   color: #1E3A8A;
-}
-
-@media (max-width: 1024px) {
-  .cards {
-    display: flex !important;
-    flex-direction: column;
-  }
 }
 
 .modal-title {
@@ -302,12 +280,6 @@ h4 {
   visibility: visible;
 }
 
-@media (max-width: 426px) {
-  .tool-image {
-      max-width: 3rem !important;
-  }
-}
-
 /* Estilo projects*/
 
 .projects {
@@ -326,12 +298,6 @@ h4 {
 
 .image-container {
   height: 60vh;
-}
-
-@media (max-width: 1024px) {
-  .image-container {
-      height: 20rem !important;
-  }
 }
 
 
@@ -375,3 +341,49 @@ footer a img:hover {
 footer p span {
   color: #60A5FA; /* Azul claro para resaltar */
 }
+
+/* RESPONSIVE DESING */
+
+@media (max-width: 1440px) {
+  .contact-container {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .image-container {
+    height: 20rem !important;
+  }
+
+  .contact-container {
+    height: 25vh;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.open ul {
+    display: flex;
+  }
+
+  nav .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .tool-image {
+      max-width: 3rem !important;
+  }
+}
+

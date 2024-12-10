@@ -51,7 +51,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, detailedI
                     <h4 className="text-xl font-bold mb-2">{titleTools}</h4>
                     <ul className="tools-list">
                         {tools.map((tool, index) => (
-                            <li className="list-tool relative" key={index} onMouseEnter={() => setHoveredTool(tool.name)} onMouseLeave={() => setHoveredTool(null)}><img className="max-w-20 p-1" src={tool.logo} alt={tool.name}></img>
+                            <li className="list-tool relative" key={index} onMouseEnter={() => setHoveredTool(tool.name)} onMouseLeave={() => setHoveredTool(null)}><img className="tool-image max-w-20 p-1" src={tool.logo} alt={tool.name}></img>
                             {hoveredTool === tool.name && (
                                 <div className="tooltip">{tool.name}</div>
                             )}
