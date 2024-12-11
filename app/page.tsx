@@ -85,17 +85,17 @@ export default function Home() {
           
             <section className="contact-section flex flex-col items-center">
               <div className="container py-16 px-8 flex justify-center flex-col items-center">
-              <h2 className="text-white font-extrabold p-2 text-3xl">Contáctame</h2>
-              <p className="text-white pb-2 text-xl">¿Quieres colaborar o tienes alguna pregunta? No dudes en ponerte en contacto conmigo.</p>
+              <h2 className="contact-title text-white font-extrabold p-2 text-3xl">Contáctame</h2>
+              <p className="contact-info text-white pb-2 text-xl">¿Quieres colaborar o tienes alguna pregunta? No dudes en ponerte en contacto conmigo.</p>
               <div className="email-container p-1">
-                <p className="text-xl">📧 <a href="mailto:luibelzan@outlook.com">luibelzan@outlook.com</a></p>
+                <p className="contact-email text-xl">📧 <a href="mailto:luibelzan@outlook.com">luibelzan@outlook.com</a></p>
               </div>
               <div className="social-links flex flex-row pb-5">
                 <a href="https://www.linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
-                  <img src="linkedin.png" alt="LinkedIn Logo" className="max-w-16"/>
+                  <img src="linkedin.png" alt="LinkedIn Logo" className="contact-socials max-w-16"/>
                 </a>
                 <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
-                  <img src="github.png" alt="GitHub Logo" className="max-w-16"/>
+                  <img src="github.png" alt="GitHub Logo" className="contact-socials max-w-16"/>
                 </a>
               </div>
               </div>

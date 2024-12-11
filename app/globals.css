@@ -344,6 +344,12 @@ footer p span {
 
 /* RESPONSIVE DESING */
 
+@media (max-width: 2560px) {
+  .contact-container {
+    height: 25vh !important;
+  }
+}
+
 @media (max-width: 1440px) {
   .contact-container {
     height: 30vh;
@@ -354,10 +360,6 @@ footer p span {
   .cards {
     display: flex !important;
     flex-direction: column;
-  }
-
-  .image-container {
-    height: 20rem !important;
   }
 
   .contact-container {
@@ -379,11 +381,71 @@ footer p span {
   nav .menu-button {
     display: block;
   }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-container {
+    height: 30vh !important;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .tool-image {
       max-width: 3rem !important;
+  }
+
+  .image-container {
+    height: 30vh !important;
+  }
+
+  .contact-container {
+    height: 30vh;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-title {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
+  .contact-info {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+
+  .contact-email {
+    font-size: 1rem;
+    line-height: 0.7rem;
+  }
+
+  .contact-socials {
+    max-width: 2.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .cardButton {
+    width: 10.1rem;
+  }
+
+  .contact-container {
+    height: 15vh;
+  }
+
+  .image-container {
+    height: 15vh !important;
   }
 }
 
