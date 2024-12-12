@@ -13,7 +13,7 @@ const NavBar = () => {
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo or name */}
                 <Link href="/">
-                    Softforge Solutions
+                    SoftForge Solutions
                 </Link>
         
                 {/* Menu button for mobile */}

@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import Head from "next/head";
+import { useEffect } from "react";
 import ServiceCard from "./components/serviceCard";
 import ProjectSlider from "./components/projectSlider";
 import Footer from "./components/footer";
@@ -33,8 +35,18 @@ const services = [
 ];
 
 
-
 export default function Home() {
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const scaleFactor = window.devicePixelRatio;
+  
+      if (scaleFactor > 1) {
+        document.body.classList.add("high-dpi");
+      }
+    }
+  }, []);
+
   return (
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
         {/* Div del video */}
