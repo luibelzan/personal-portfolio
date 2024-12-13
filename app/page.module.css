@@ -166,3 +166,31 @@ a.secondary {
     filter: invert();
   }
 }
+
+.mi-clase {
+  --i: 0;
+}
+
+.mi-clase:nth-child(1) {
+  --i: 0;
+}
+
+.mi-clase:nth-child(2) {
+  --i: 1;
+}
+
+.mi-clase:nth-child(3) {
+  --i: 2;
+}
+
+.mi-clase:nth-child(4) {
+  --i: 3;
+}
+
+.mi-clase:nth-child(5) {
+  --i: 4;
+}
+
+.mi-clase:nth-child(6) {
+  --i: 5;
+}

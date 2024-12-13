@@ -17,7 +17,8 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 body {
@@ -308,7 +309,7 @@ h4 {
   background-blend-mode: overlay; /* Combina imagen y color */
   background-size: cover; /* Asegura que la imagen cubra todo el div */
   background-repeat: no-repeat; /* Evita repeticiones de la imagen */
-  height: 50vh;
+  height: 14rem;
   align-items: center;
 }
 
@@ -345,15 +346,11 @@ footer p span {
 /* RESPONSIVE DESING */
 
 @media (max-width: 2560px) {
-  .contact-container {
-    height: 25vh !important;
-  }
+  
 }
 
 @media (max-width: 1440px) {
-  .contact-container {
-    height: 30vh;
-  }
+ 
 }
 
 @media (max-width: 1024px) {
@@ -362,8 +359,23 @@ footer p span {
     flex-direction: column;
   }
 
-  .contact-container {
-    height: 25vh;
+  .contact-title {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .contact-email {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .contact-socials {
+    max-width: 2.5rem;
   }
 }
 
@@ -385,10 +397,6 @@ footer p span {
   .contact-info {
     text-align: center;
   }
-
-  .contact-container {
-    height: 30vh !important;
-  }
 }
 
 @media (max-width: 430px) {
@@ -398,10 +406,6 @@ footer p span {
 
   .image-container {
     height: 30vh !important;
-  }
-
-  .contact-container {
-    height: 30vh;
   }
 
   .contact-title {
@@ -440,12 +444,80 @@ footer p span {
     width: 10.1rem;
   }
 
-  .contact-container {
-    height: 15vh;
-  }
-
   .image-container {
     height: 15vh !important;
   }
 }
 
+/* PROJECT PAGE STYLES */
+
+.box {
+  width: 60vw; /* Cambia de píxeles a viewport width */
+  height: calc(60vw * 9 / 16); /* Mantiene una proporción de 16:9 */
+  transform: rotate(-25deg) skew(25deg);
+  max-width: 1280px; /* Tamaño máximo para pantallas grandes */
+  max-height: 720px;
+}
+
+.box:hover {
+  transform: rotate(-25deg) skew(-25deg) translateY(-2vh);
+}
+
+/* Span */
+.box span {
+  width: 25%; /* Cada span ocupa el 25% del ancho */
+  height: 100%;
+  background: url('../public/funkyart.png');
+  background-size: cover; /* Ajusta para cubrir el contenedor */
+  background-position: calc(var(--i) * -100%) 0; /* Escala dinámicamente */
+  display: inline-block;
+  transition: .5s;
+  pointer-events: none;
+  border-top: 1vh solid #fff; /* Ajustado a viewport height */
+  border-bottom: 1vh solid #fff;
+}
+
+/* Efectos al hover */
+.box:hover span:nth-child(odd) {
+  transform: skewY(25deg);
+  box-shadow: inset 2vw 0 5vw rgba(0,0,0, .5);
+}
+
+.box:hover span:nth-child(even) {
+  transform: skewY(-25deg);
+  box-shadow: inset 2vw 0 5vw rgba(0,0,0, .5);
+}
+
+/* Bordes en los extremos */
+.box span:first-child {
+  border-left: 0.5vw solid #fff;
+}
+
+.box span:last-child {
+  border-right: 0.5vw solid #fff;
+}
+
+/* Media queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+  .box {
+    width: 90vw;
+    height: calc(90vw * 9 / 16);
+  }
+
+  .box span {
+    border-top: 0.5vh solid #fff;
+    border-bottom: 0.5vh solid #fff;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+  }
+
+  .box span {
+    border-top: 0.3vh solid #fff;
+    border-bottom: 0.3vh solid #fff;
+  }
+}

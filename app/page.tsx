@@ -1,11 +1,9 @@
 "use client"
-import Image from "next/image";
 import styles from "./page.module.css";
-import Head from "next/head";
-import { useEffect } from "react";
 import ServiceCard from "./components/serviceCard";
 import ProjectSlider from "./components/projectSlider";
 import Footer from "./components/footer";
+import ScaleFactorCalculator from "./components/scaleFactorCalculator";
 
 const services = [
   {
@@ -37,15 +35,7 @@ const services = [
 
 export default function Home() {
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const scaleFactor = window.devicePixelRatio;
-  
-      if (scaleFactor > 1) {
-        document.body.classList.add("high-dpi");
-      }
-    }
-  }, []);
+  ScaleFactorCalculator();
 
   return (
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
@@ -56,8 +46,8 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
           <div className="content z-10 text-white text-center">
-            <h1 className="text-5xl font-bold">Softforge Solutions</h1>
-            <h3 className="text-3xl mt-2">
+            <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-6xl font-bold">Softforge Solutions</h1>
+            <h3 className="text-xl sm:text-xl md:text-2xl lg:text-4xl mt-2">
               <em>Design, Development and Maintenance of customized software solutions.</em>
             </h3>
           </div>
@@ -102,7 +92,7 @@ export default function Home() {
               <div className="email-container p-1">
                 <p className="contact-email text-xl">📧 <a href="mailto:luibelzan@outlook.com">luibelzan@outlook.com</a></p>
               </div>
-              <div className="social-links flex flex-row pb-5">
+              <div className="social-links flex flex-row">
                 <a href="https://www.linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
                   <img src="linkedin.png" alt="LinkedIn Logo" className="contact-socials max-w-16"/>
                 </a>
