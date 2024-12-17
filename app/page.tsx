@@ -104,13 +104,6 @@ export default function Home() {
             </section>
           </div>
 
-          <div className="footer-container w-full">
-            <Footer/>
-          </div>
-
-
-
-
       </div>
   );
 }
