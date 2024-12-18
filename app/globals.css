@@ -453,6 +453,19 @@ footer p span {
   background: linear-gradient(to bottom, #9e9c9c, #e6f7ff);
 }
 
+.project-description {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.3em;
+  display: block;
+  padding-top: 10rem;
+  unicode-bidi: isolate;
+}
+
 .box {
   width: 100%; /* Cambia de píxeles a viewport width */
   aspect-ratio: 16 / 9;
@@ -460,6 +473,7 @@ footer p span {
   max-width: 80rem; /* Tamaño máximo para pantallas grandes */
   max-height: 45rem;
   display: flex;
+  margin-top: 7rem;
 }
 
 .box:hover {
