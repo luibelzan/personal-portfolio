@@ -453,7 +453,7 @@ footer p span {
   background: linear-gradient(to bottom, #9e9c9c, #e6f7ff);
 }
 
-.project-description {
+.project-short-description {
   max-width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -484,7 +484,7 @@ footer p span {
 .box span {
   width: 25%; /* Cada span ocupa el 25% del ancho */
   height: 100%;
-  background: url('../public/funkyart.png');
+  background: url('../public/funkyart.gif');
   background-size: cover; /* Ajusta para cubrir el contenedor */
   background-position: calc(-19.87rem * var(--i)) ; /* Escala dinámicamente */
   display: block;
@@ -512,5 +512,22 @@ footer p span {
 
 .box span:last-child {
   border-right: 0.313rem solid blue;
+}
+
+.home-image {
+  max-width: 75%;
+}
+
+.collage {
+  margin-top: -2.813rem;
+}
+
+.project-description {
+  font-weight: bold;
+  line-height: 2rem;
+  width: 75%;
+  letter-spacing: .5px;
+  margin: 0 auto 14px;
+  padding-bottom: 5rem;
 }
 
