@@ -4,8 +4,8 @@ export default async function Page() {
     return (
         <div className="project-page w-full">
             <div className="container flex items-center flex-col m-auto overflow-hidden py-16 px-8">
-                <h1 className="project-name mt-12 pb-3">Funky Art</h1>
-                <div className="box shared-style">
+                <h1 className="project-name mt-12 pb-3">Nacho Trelles</h1>
+                <div className="box2 shared-style">
                     <span className={styles['mi-clase']}></span>
                     <span className={styles['mi-clase']}></span>
                     <span className={styles['mi-clase']}></span>

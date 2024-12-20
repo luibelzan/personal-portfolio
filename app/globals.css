@@ -453,6 +453,25 @@ footer p span {
   background: linear-gradient(to bottom, #9e9c9c, #e6f7ff);
 }
 
+.project-name {
+  font-size: 4rem; /* Ajusta según necesidad */
+  font-weight: 800;
+  text-align: center;
+  color: transparent;
+  background: linear-gradient(90deg, #00d1ff, #ff00c3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.05em;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.project-name:hover {
+  text-shadow: 0 0 15px rgba(0, 209, 255, 0.7), 0 0 25px rgba(255, 0, 195, 0.7);
+  transition: text-shadow 0.3s ease;
+}
+
 .project-short-description {
   max-width: 75%;
   margin-left: auto;
@@ -466,7 +485,7 @@ footer p span {
   unicode-bidi: isolate;
 }
 
-.box {
+.shared-style {
   width: 100%; /* Cambia de píxeles a viewport width */
   aspect-ratio: 16 / 9;
   transform: rotate(-15deg) skew(25deg);
@@ -476,17 +495,14 @@ footer p span {
   margin-top: 7rem;
 }
 
-.box:hover {
+.shared-style:hover {
   transform: rotate(-15deg) skew(-15deg) translateY(-1.25rem);
 }
 
 /* Span */
-.box span {
+.shared-style span {
   width: 25%; /* Cada span ocupa el 25% del ancho */
   height: 100%;
-  background: url('../public/funkyart.gif');
-  background-size: cover; /* Ajusta para cubrir el contenedor */
-  background-position: calc(-19.87rem * var(--i)) ; /* Escala dinámicamente */
   display: block;
   transition: .5s;
   pointer-events: none;
@@ -494,23 +510,35 @@ footer p span {
   border-bottom: 0.313rem solid blue;
 }
 
+.box span {
+  background: url('../public/funkyart.gif');
+  background-size: 430%; /* Ajusta para cubrir el contenedor */
+  background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
+}
+
+.box2 span {
+  background: url('../public/morsan.png');
+  background-size: 430%; /* Ajusta para cubrir el contenedor */
+  background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
+}
+
 /* Efectos al hover */
-.box:hover span:nth-child(odd) {
+.shared-style:hover span:nth-child(odd) {
   transform: skewY(25deg);
   box-shadow: inset 1.25rem 0 3.125rem rgba(0,0,0, .5);
 }
 
-.box:hover span:nth-child(even) {
+.shared-style:hover span:nth-child(even) {
   transform: skewY(-25deg);
   box-shadow: inset 1.25rem 0 3.125rem rgba(0,0,0, .5);
 }
 
 /* Bordes en los extremos */
-.box span:first-child {
+.shared-style span:first-child {
   border-left: 0.313rem solid blue;
 }
 
-.box span:last-child {
+.shared-style span:last-child {
   border-right: 0.313rem solid blue;
 }
 
