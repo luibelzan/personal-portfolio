@@ -517,8 +517,14 @@ footer p span {
 }
 
 .box2 span {
+  background: url('../public/nachotrelles.png');
+  background-size: 450%; /* Ajusta para cubrir el contenedor */
+  background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
+}
+
+.box3 span {
   background: url('../public/morsan.png');
-  background-size: 430%; /* Ajusta para cubrir el contenedor */
+  background-size: 450%; /* Ajusta para cubrir el contenedor */
   background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
 }
 
