@@ -13,11 +13,11 @@ export default async function Page() {
                 </div>
 
                 <div className="flex justify-center flex-col items-center">
-                    <h2 className="project-short-description pb-4">Tienda online especializada en ropa personalizada, donde la creatividad y el estilo se unen para ofrecer prendas unicasadaptadas a los gustos de cada cliente.</h2>
+                    <h2 className="project-short-description pb-20">Tienda online especializada en ropa personalizada, donde la creatividad y el estilo se unen para ofrecer prendas unicas y adaptadas a los gustos de cada cliente.</h2>
                     <div className="flex flex-col items-center">
-                        <img className="collage pb-20" src="/nachotrelles/collagenacho.png"></img>\
-                        <p className="project-description text-black">La web funciona como un portfolio en linea realizado con Wordpress donde se puede encontrar informacion sobre su experiencia, trabajos destacados, y servicios o contacto profesional. Incorpora elementos visuales atractivos y un enfoque claro en la navegacion intuitiva para resaltar las fortalezas y capacidades del autor.</p>
-                        <img src="/nachotrelles/libro.png" className="pb-20"></img>
+                        <img className="collage pb-10" src="/morsan/morsancollage.png"></img>\
+                        <p className="project-description text-black">Con un diseño moderno y fácil de navegar, la página permite explorar una amplia variedad de productos personalizables, desde camisetas y sudaderas hasta accesorios. Ideal para aquellos que buscan expresar su individualidad a través de la moda, Morsan.es combina calidad en materiales con opciones creativas de personalización para una experiencia de compra única.</p>
+                        <img src="/morsan/checkout.png" className="pb-20"></img>
                     </div>
                 </div>
                 
