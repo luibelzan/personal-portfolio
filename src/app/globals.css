@@ -303,7 +303,7 @@ h4 {
 /*Estilos contactame*/
 .contact-container {
   background-color: rgba(0, 0, 255, 0.208); /* Azul con opacidad */
-  background-image: url('../public/contacta.png');
+  background-image: url('../../public/contacta.png');
   background-blend-mode: overlay; /* Combina imagen y color */
   background-size: cover; /* Asegura que la imagen cubra todo el div */
   background-repeat: no-repeat; /* Evita repeticiones de la imagen */
@@ -511,19 +511,19 @@ footer p span {
 }
 
 .box span {
-  background: url('../public/funkyart.gif');
+  background: url('../../public/funkyart/funkyart.gif');
   background-size: 430%; /* Ajusta para cubrir el contenedor */
   background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
 }
 
 .box2 span {
-  background: url('../public/nachotrelles.png');
+  background: url('../../public/nachotrelles/nachotrelles.png');
   background-size: 450%; /* Ajusta para cubrir el contenedor */
   background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
 }
 
 .box3 span {
-  background: url('../public/morsan.png');
+  background: url('../../public/morsan/morsan.png');
   background-size: 450%; /* Ajusta para cubrir el contenedor */
   background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
 }

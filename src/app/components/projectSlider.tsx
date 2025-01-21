@@ -5,17 +5,17 @@ const projects = [
     {
       title: 'Funky Art',
       description: 'Plataforma Web3 para acu;ar activos digitales en la Blockchain de Ethereum',
-      image: 'funkyart.png'
+      image: 'funkyart/funkyart.gif'
     },
     {
         title: 'Nacho Trelles',
         description: 'Pagina web personal de Nacho Trelles, un bombero apasionado por la literatura.',
-        image: 'nachotrelles.png'
+        image: 'nachotrelles/nachotrelles.png'
       },
       {
         title: 'Morsan',
         description: 'Tienda online de ropa personalizada.',
-        image: 'morsan.png'
+        image: 'morsan/morsan.png'
       },
       {
         title: 'Motor de lectura y recuperacion SOAP',
