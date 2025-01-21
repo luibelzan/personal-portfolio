@@ -1,9 +1,10 @@
 "use client"
 import styles from "./page.module.css";
-import ServiceCard from "./components/serviceCard";
-import ProjectSlider from "./components/projectSlider";
-import Footer from "./components/footer";
-import ScaleFactorCalculator from "./components/scaleFactorCalculator";
+import ServiceCard from "../components/serviceCard";
+import ProjectSlider from "../components/projectSlider";
+import ScaleFactorCalculator from "../components/scaleFactorCalculator";
+import {useTranslations} from 'next-intl';
+import {Link} from '@/i18n/routing';
 
 const services = [
   {
@@ -36,6 +37,7 @@ const services = [
 export default function Home() {
 
   ScaleFactorCalculator();
+  const t = useTranslations('HomePage');
 
   return (
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
@@ -103,6 +105,11 @@ export default function Home() {
               </div>
             </section>
           </div>
+
+          <div>
+      <h1>{t('title')}</h1>
+        <Link href="/about">{t('about')}</Link>
+      </div>
 
       </div>
   );
