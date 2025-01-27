@@ -1,6 +1,72 @@
 {
-    "HomePage": {
-      "title": "Hola Mundo",
-      "about": "Sobre"
-    }
+  "HomePage": {
+    "pageDescription": "Design, Development and Maintenance of customized software solutions.",
+    "servicesTitle": "Custom software solutions",
+    "servicesDescription": "We boost your business with cutting-edge technologies",
+    "service1": "Custom Software",
+    "service2": "Web Development",
+    "service3": "Project Management",
+    "service1Description": "We create software designed specifically to meet the needs of your business. We work with you to transform your ideas into technological tools that boost your productivity and growth.",
+    "service2Description": "We transform your online presence with a personalized and professional web design. We are specialized in creating modern, functional and easy-to-use websites that adapt to your specific needs.",
+    "service3Description": "We maximize the efficiency of your projects with agile, flexible and results-focused management. We focus on applying agile methodologies to develop efficient and high-quality software solutions, ensuring continuous delivery of value.",
+    "servicesButton": "Discover more",
+    "services": [
+        {
+          "title": "Custom Software",
+          "description": "Creamos software diseñado específicamente para satisfacer las necesidades de tu negocio. Trabajamos contigo para transformar tus ideas en herramientas tecnológicas que impulsen tu productividad y crecimiento.",
+          "detailedInfo": "Especializados en crear la arquitectura y lógica que impulsa tu aplicación desde el núcleo. Este servicio abarca el diseño, desarrollo y mantenimiento del sistema que opera detrás de escena, asegurando un rendimiento óptimo, seguridad y confiabilidad.",
+          "services": [
+            "Automatización de procesos y tareas para optimizar recursos y tiempo",
+            "Integración eficiente de bases de datos, garantizando acceso rápido y seguro a la información",
+            "Creación de APIs sólidas para la interacción entre el cliente y el servidor",
+            "Implementación de sistemas escalables que puedan crecer junto a tu negocio"
+          ],
+          "titleTools": "Lenguajes de programación",
+          "tools": [
+            { "logo": "java.png", "name": "Java" },
+            { "logo": "javascript.png", "name": "Javascript" },
+            { "logo": "typescript.png", "name": "Typescript" },
+            { "logo": "python.png", "name": "Python" },
+            { "logo": "html.png", "name": "HTML" },
+            { "logo": "sql.png", "name": "SQL" }
+          ]
+        },
+        {
+          "title": "Desarrollo web",
+          "description": "Transformamos tu presencia online con un diseño web personalizado y profesional. Estamos especializados en crear sitios web modernos, funcionales y fáciles de usar, que se adaptan a tus necesidades específicas.",
+          "detailedInfo": "El desarrollo web se centra en la creación de interfaces de usuario interactivas y atractivas, donde la experiencia del usuario es clave. Transformamos diseños en experiencias digitales funcionales utilizando tecnologías como HTML, CSS, Javascript y frameworks modernos como React o Angular.",
+          "services": [
+            "Creación de sitios web rápidos y eficientes mediante la optimización del rendimiento",
+            "Implementación de animaciones, transiciones y efectos visuales que mejoran la experiencia de usuario",
+            "Diseño de interfaces adaptables a diferentes dispositivos y tamaños de pantalla"
+          ],
+          "titleTools": "Frameworks de desarrollo",
+          "tools": [
+            { "logo": "react.png", "name": "Reactjs" },
+            { "logo": "spring.png", "name": "Spring" },
+            { "logo": "nextjs.png", "name": "Nextjs" },
+            { "logo": "angular.png", "name": "Angular" },
+            { "logo": "django.png", "name": "Django" }
+          ]
+        },
+        {
+          "title": "Gestión de proyectos",
+          "description": "Maximizamos la eficiencia de tus proyectos con una gestión ágil, flexible y centrado en resultados. Nos enfocamos en aplicar metodologías ágiles para desarrollar soluciones software eficientes y de alta calidad, garantizando una entrega continua de valor.",
+          "detailedInfo": "La gestión de proyectos es clave para garantizar el éxito de cualquier desarrollo tecnológico. Combinamos prácticas ágiles y tradicionales para garantizar una planificación eficiente, una ejecución fluida y una entrega exitosa. Aseguramos que cada etapa del proyecto esté cuidadosamente gestionada y alineada con las expectativas del cliente y las necesidades del mercado.",
+          "services": [
+            "Definición clara de objetivos, hitos y cronogramas para asegurar una ejecución efectiva",
+            "Implementación de metodologías ágiles como Scrum para una gestión flexible y centrada en el cliente",
+            "Supervisión de entregables para garantizar que cumplan con altos estándares de calidad y funcionalidad"
+          ],
+          "titleTools": "Herramientas de gestión",
+          "tools": [
+            { "logo": "trello.png", "name": "Trello" },
+            { "logo": "github.png", "name": "Github" },
+            { "logo": "microsoftproject.png", "name": "Microsoft Projects" },
+            { "logo": "teams.png", "name": "Microsoft Teams" },
+            { "logo": "lunacy.png", "name": "Lunacy" }
+          ]
+        }
+    ]
   }
+}

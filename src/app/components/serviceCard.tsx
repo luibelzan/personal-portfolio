@@ -1,5 +1,7 @@
 'use client'
 import { use, useState } from "react";
+import {useTranslations} from 'next-intl';
+
 
 interface ServiceCardProps {
     title: string;
@@ -17,6 +19,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, detailedI
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
+
+    const t = useTranslations('HomePage');
     return(
         <div className="serviceCard p-6 rounded-lg shadow-lg text-center flex flex-col justify-center items-center m-6">
             <div className="flex-grow">

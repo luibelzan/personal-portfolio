@@ -1,10 +1,14 @@
+import { useTranslations } from "next-intl";
+
 const Footer = () => {
+
+    const t = useTranslations('Footer');
 
     return (
         <footer className=" text-white py-6">
             <div className="container mx-auto text-center">
-                <p className="text-sm">© 2024 SoftForge Solutions. Todos los derechos reservados.</p>
-                <p className="text-xs mt-4">Diseñado con <span className="text-blue-400">♥</span> y dedicación.</p>
+                <p className="text-sm">{t('footerSectionTitle')}</p>
+                <p className="text-xs mt-4">{t('footerSectionDescription1')} <span className="text-blue-400">♥</span> {t('footerSectionDescription2')}</p>
             </div>
         </footer>
     )
