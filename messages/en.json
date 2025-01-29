@@ -4,6 +4,8 @@
       "servicesTitle": "Custom software solutions",
       "servicesDescription": "We boost your business with cutting-edge technologies",
       "servicesButton": "Discover more",
+      "serviceOffer": "What we offer",
+      "closeModal": "Close",
       
       "service1Title": "Custom Software",
       "service1Description": "We create software specifically designed to meet the needs of your business. We work with you to transform your ideas into technological tools that drive your productivity and growth.",
@@ -33,7 +35,9 @@
       "project2Description": "Personal website of Nacho Trelles, a firefighter passionate about literature.",
       "project3Description": "Online store for custom clothing.",
       "project4Description": "Service to automate the reading of smart electricity meters.",
-      "more": "See more" 
+      "more": "See more",
+      "nextProject": "Next",
+      "backProject": "Back"
     },
 
     "Footer": {

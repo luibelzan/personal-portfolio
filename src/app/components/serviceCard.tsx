@@ -30,7 +30,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, detailedI
             </div>
             <button onClick={openModal}
                 className="cardButton w-52 mt-6 p-6 bg-white text-blue-500 font-semibold py-3 px-6 rounded-lg border-2 border-blue-500 transition-all duration-300 hover:bg-blue-500 hover:text-white hover:border-blue-700">
-                    Descubre mas
+                    {t('servicesButton')}
                 </button>
         
 
@@ -46,7 +46,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, detailedI
                 >
                     <h3 className="modal-title text-xl font-bold mb-2">{title}</h3>
                     <p className="modal-info">{detailedInfo}</p>
-                    <h4 className="text-xl font-bold mb-2">Que ofrecemos</h4>
+                    <h4 className="text-xl font-bold mb-2">{t('serviceOffer')}</h4>
                     <ul className="services-list">    
                         {services.map((service, index) => (
                             <li className="list-element text-black" key={index}>{service}</li>
@@ -66,7 +66,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, detailedI
                         onClick={closeModal} // Solo cierra el modal al hacer clic en este botón
                         className="modal-button mt-6 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
                     >
-                        Cerrar
+                        {t('closeModal')}
                     </button>
                 </div>
             </div>

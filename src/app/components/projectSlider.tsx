@@ -59,8 +59,8 @@ const ProjectSlider = () => {
             <h3 className="text-3xl font-extrabold text-black">{currentProject.title}</h3>
             <p className="text-black text-sm italic max-w-xl mx-auto">{currentProject.description} <Link href={`/${locale}${currentProject.url}`}>{t('more')}</Link></p>
             <div className="navigation-buttons flex justify-between w-full max-w">
-                <button onClick={prevProject} className="bg-red-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-red-700 hover:shadow-lg transition-all">Anterior</button>
-                <button onClick={nextProject} className="bg-green-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-green-700 hover:shadow-lg transition-all">Siguiente</button>
+                <button onClick={prevProject} className="bg-red-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-red-700 hover:shadow-lg transition-all">{t('backProject')}</button>
+                <button onClick={nextProject} className="bg-green-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-green-700 hover:shadow-lg transition-all">{t('nextProject')}</button>
             </div>
         </div>
     )

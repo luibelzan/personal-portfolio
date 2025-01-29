@@ -1,9 +1,11 @@
 {
   "HomePage": {
     "pageDescription": "Diseño, desarrollo y mantenimiento de soluciones de software personalizadas.",
-    "servicesTitle": "Soluciones de software personalizadas",
+    "servicesTitle": "Soluciones de software a medida",
     "servicesDescription": "Impulsamos tu negocio con tecnologías de vanguardia",
-    "servicesButton": "Descubrir más",
+    "servicesButton": "Descubre más",
+    "serviceOffer": "Que ofrecemos",
+    "closeModal": "Cerrar",
     
     "service1Title": "Software a medida",
     "service1Description": "Creamos software diseñado específicamente para satisfacer las necesidades de tu negocio. Trabajamos contigo para transformar tus ideas en herramientas tecnológicas que impulsen tu productividad y crecimiento.",
@@ -33,7 +35,9 @@
     "project2Description": "Página web personal de Nacho Trelles, un bombero apasionado por la literatura.",
     "project3Description": "Tienda online de ropa personalizada.",
     "project4Description": "Servicio para automatizar la lectura de los contadores inteligentes de la luz.",
-    "more": "Ver más" 
+    "more": "Ver más",
+    "nextProject": "Anterior",
+    "backProject": "Siguiente"
   },
 
   "Footer": {
