@@ -1,0 +1,69 @@
+{
+  "HomePage": {
+    "pageDescription": "Diseño, desarrollo y mantenimiento de soluciones de software personalizadas.",
+    "servicesTitle": "Soluciones de software a medida",
+    "servicesDescription": "Impulsamos tu negocio con tecnologías de vanguardia",
+    "servicesButton": "Descubre más",
+    "serviceOffer": "Que ofrecemos",
+    "closeModal": "Cerrar",
+    
+    "service1Title": "Software a medida",
+    "service1Description": "Creamos software diseñado específicamente para satisfacer las necesidades de tu negocio. Trabajamos contigo para transformar tus ideas en herramientas tecnológicas que impulsen tu productividad y crecimiento.",
+    "service1DetailedInfo": "Especializados en la creación de la arquitectura y la lógica que potencia tu aplicación desde el núcleo. Este servicio incluye el diseño, desarrollo y mantenimiento del sistema que opera tras bambalinas, garantizando un rendimiento óptimo, seguridad y fiabilidad.",
+    "service1Services": "Automatización de procesos y tareas para optimizar recursos y tiempo.;Integración eficiente de bases de datos, garantizando un acceso rápido y seguro a la información.;Creación de APIs robustas para una interacción fluida entre el cliente y el servidor.;Implementación de sistemas escalables que pueden crecer junto con tu negocio.",
+    "service1TitleTools": "Lenguajes de programación",
+
+    "service2Title": "Desarrollo web",
+    "service2Description": "Transformamos tu presencia online con un diseño web personalizado y profesional. Nos especializamos en la creación de sitios modernos, funcionales y fáciles de usar, adaptados a tus necesidades.",
+    "service2DetailedInfo": "El desarrollo web se centra en la creación de interfaces de usuario interactivas y atractivas, donde la experiencia del usuario es clave. Transformamos diseños en experiencias digitales funcionales utilizando tecnologías como HTML, CSS, JavaScript y frameworks modernos como React o Angular.",
+    "service2Services": "Creación de sitios web rápidos y eficientes mediante optimización de rendimiento.;Implementación de animaciones, transiciones y efectos visuales que mejoran la experiencia del usuario.;Diseño de interfaces adaptables a diferentes dispositivos y tamaños de pantalla.",
+    "service2TitleTools": "Frameworks de desarrollo",
+
+    "service3Title": "Gestión de proyectos",
+    "service3Description": "Maximizamos la eficiencia de tus proyectos con una gestión ágil, flexible y orientada a resultados. Nos enfocamos en aplicar metodologías ágiles para desarrollar soluciones de software eficientes y de alta calidad, garantizando la entrega continua de valor.",
+    "service3DetailedInfo": "La gestión de proyectos es clave para garantizar el éxito de cualquier desarrollo tecnológico. Combinamos prácticas ágiles y tradicionales para asegurar una planificación eficiente, una ejecución fluida y una entrega exitosa. Nos aseguramos de que cada etapa del proyecto esté cuidadosamente gestionada y alineada con las expectativas del cliente y las necesidades del mercado.",
+    "service3Services": "Definición clara de objetivos, hitos y cronogramas para asegurar una ejecución efectiva.;Implementación de metodologías ágiles como Scrum para una gestión flexible y centrada en el cliente.;Supervisión de entregables para garantizar que cumplan con altos estándares de calidad y funcionalidad.",
+    "service3TitleTools": "Herramientas de gestión",
+
+    "projects": "Proyectos",
+    "contactSectionTitle": "Contáctanos",
+    "contactSectionDescription": "¿Quieres colaborar o tienes alguna pregunta? No dudes en ponerte en contacto."
+  },
+
+  "Projects": {
+    "project1Description": "Plataforma Web3 para acuñar activos digitales en la Blockchain de Ethereum.",
+    "project2Description": "Página web personal de Nacho Trelles, un bombero apasionado por la literatura.",
+    "project3Description": "Tienda online de ropa personalizada.",
+    "project4Description": "Servicio para automatizar la lectura de los contadores inteligentes de la luz.",
+    "more": "Ver más",
+    "nextProject": "Anterior",
+    "backProject": "Siguiente"
+  },
+
+  "Footer": {
+    "footerSectionTitle": "© 2024 SoftForge Solutions. Todos los derechos reservados.",
+    "footerSectionDescription1": "Diseñado con ",
+    "footerSectionDescription2": " y dedicación."
+  },
+
+  "FunkyArt": {
+    "funkyArtShortDescription": "Una plataforma Web3 para acuñar activos digitales en la Blockchain de Ethereum.",
+    "funkyArtLongDescription": "Funky Art es una plataforma innovadora desarrollada como proyecto de fin de grado que permite a los usuarios mintear NFTs en la blockchain de manera sencilla. Implementada utilizando JavaScript, Next.js y Solidity, esta aplicación combina un diseño moderno con funcionalidades avanzadas de Web3, como la conexión con wallets, gestión de contratos inteligentes y despliegue seguro en la blockchain. El objetivo principal es ofrecer una experiencia intuitiva y eficiente para creadores y coleccionistas en el ecosistema de los NFTs."
+  },
+
+  "Morsan": {
+    "morsanShortDescription": "Tienda online especializada en ropa personalizada, donde la creatividad y el estilo se unen para ofrecer prendas únicas y adaptadas a los gustos de cada cliente.",
+    "morsanLongDescription": "Con un diseño moderno y fácil de navegar, la página permite explorar una amplia variedad de productos personalizables, desde camisetas y sudaderas hasta accesorios. Ideal para aquellos que buscan expresar su individualidad a través de la moda, Morsan.es combina calidad en materiales con opciones creativas de personalización para una experiencia de compra única."
+  },
+
+  "NachoTrelles": {
+    "nachoShortDescription": "Página web personal orientada a presentar la trayectoria, los proyectos y habilidades de Nacho Trelles.",
+    "nachoLongDescription": "La web funciona como un portfolio en línea realizado con WordPress donde se puede encontrar información sobre su experiencia, trabajos destacados, y servicios o contacto profesional, así como unos cuestionarios para la preparación de bomberos. Incorpora elementos visuales atractivos y un enfoque claro en la navegación intuitiva para resaltar las fortalezas y capacidades del autor."
+  },
+
+  "SOAPMeterFlow": {
+    "SOAPShortDescription": "Servicio encargado de automatizar la lectura de los contadores inteligentes de la luz.",
+    "SOAPLongDescription1": "SOAP Meter Flow es un servicio desarrollado con TypeScript y compatible con múltiples bases de datos PostgreSQL. El servicio hace uso de funciones asíncronas para completar la automatización de la lectura de los contadores para cada cliente en paralelo.",
+    "SOAPLongDescription2": "La ejecución del servicio es la siguiente. Primero, con un servidor Express.js recibimos los web services con SOAP que contienen la información enviada por el contador inteligente. El siguiente paso es almacenar cada uno de los mensajes recibidos en la base de datos del cliente correspondiente. A continuación, implementamos un algoritmo que se encarga de detectar qué contadores no han enviado información en una fecha determinada. Por último, solicitamos la información que nos falta para esa fecha concreta a través de Webservices, de forma que si recuperamos la información se almacenará en la base de datos y se vuelve a ejecutar el algoritmo anterior para comprobar que hemos recuperado la información."
+  }
+}
