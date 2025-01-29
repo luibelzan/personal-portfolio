@@ -1,31 +1,39 @@
 'use client'
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const ProjectSlider = () => {
 
+  const currentPath = usePathname();
+  const locale = currentPath.split('/')[1] || 'en';
   const t = useTranslations('Projects');
 
   const projects = [
     {
       title: 'Funky Art',
       description: t('project1Description'),
-      image: 'funkyart/funkyart.gif'
+      image: 'funkyart/funkyart.gif',
+      url: '/project/funky-art'
     },
     {
         title: 'Nacho Trelles',
         description: t('project2Description'),
-        image: 'nachotrelles/nachotrelles.png'
+        image: 'nachotrelles/nachotrelles.png',
+        url: '/project/nacho-trelles'
       },
       {
         title: 'Morsan',
         description: t('project3Description'),
-        image: 'morsan/morsan.png'
+        image: 'morsan/morsan.png',
+        url: '/project/morsan'
       },
       {
         title: 'SOAPMeterFlow',
         description: t('project4Description'),
-        image: 'trello.png'
+        image: 'trello.png',
+        url: '/project/soap-meter-flow'
       }
   ];
 
@@ -49,7 +57,7 @@ const ProjectSlider = () => {
             </div>
             
             <h3 className="text-3xl font-extrabold text-black">{currentProject.title}</h3>
-            <p className="text-black text-sm italic max-w-xl mx-auto">{currentProject.description} <a href="">{t('more')}</a></p>
+            <p className="text-black text-sm italic max-w-xl mx-auto">{currentProject.description} <Link href={`/${locale}${currentProject.url}`}>{t('more')}</Link></p>
             <div className="navigation-buttons flex justify-between w-full max-w">
                 <button onClick={prevProject} className="bg-red-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-red-700 hover:shadow-lg transition-all">Anterior</button>
                 <button onClick={nextProject} className="bg-green-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-green-700 hover:shadow-lg transition-all">Siguiente</button>

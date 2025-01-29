@@ -52,7 +52,7 @@ export default function Home() {
           <div className="content z-10 text-white text-center">
             <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-6xl font-bold">Softforge Solutions</h1>
             <h3 className="text-xl sm:text-xl md:text-2xl lg:text-4xl mt-2">
-              <em>Design, Development and Maintenance of customized software solutions.</em>
+              <em>{t("pageDescription")}</em>
             </h3>
           </div>
         </div>
