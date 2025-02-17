@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import LanguageSwitcher from './languageSwitcher';
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const NavBar = () => {
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo or name */}
                 <Link href="/">
-                    SoftForge Solutions
+                    <img className='w-48' src='/logo.png'/>
                 </Link>
         
                 {/* Menu button for mobile */}
@@ -24,18 +25,21 @@ const NavBar = () => {
                 </div>
         
                 {/* Main menu - Mobile and Desktop */}
-                <ul className={`space-x-6 ${isOpen ? 'block' : 'hidden'} md:flex`}>
+                <ul className={`space-x-6 ${isOpen ? 'block' : 'hidden'} md:flex items-center`}>
                     <li>
                         <Link href="/">Inicio</Link>
                     </li>
                     <li>
-                        <Link href="/about">Sobre mí</Link>
+                        <Link href="#about">Sobre mí</Link>
                     </li>
                     <li>
-                        <Link href="/projects">Proyectos</Link>
+                        <Link href="#projects">Proyectos</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Contacto</Link>
+                        <Link href="#contact">Contacto</Link>
+                    </li>
+                    <li>
+                        <LanguageSwitcher/>
                     </li>
                 </ul>
             </div>
