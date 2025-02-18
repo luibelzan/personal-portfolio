@@ -15,8 +15,16 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <button onClick={switchLocale} className="p-2 border rounded">
-      {currentLocale === "en" ? "🇪🇸 Español" : "🇬🇧 English"}
+    <button 
+      onClick={switchLocale} 
+      className="p-2 border rounded flex items-center gap-2 hover:bg-gray-100 transition"
+    >
+      <img 
+        src={currentLocale === "en" ? "/flags/es.png" : "/flags/gb.png"} 
+        alt={currentLocale === "en" ? "Español" : "English"} 
+        className="w-6 h-4 object-cover"
+      />
+      {currentLocale === "en" ? "🇪🇸" : "🇬🇧"}
     </button>
   );
 };
