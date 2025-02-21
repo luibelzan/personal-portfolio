@@ -66,6 +66,11 @@ nav .menu-button {
   display: none;
 }
 
+#menu-list > li{
+  text-align: center;
+  align-items: center;
+}
+
 /* HOME PAGE STYLES */
 .video-background {
   position: relative;
