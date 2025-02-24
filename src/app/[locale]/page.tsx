@@ -58,7 +58,7 @@ export default function Home() {
         </div>
 
         {/* Div de About */}
-        <div className="about container bg-gray-100 py-16 px-8">
+        <div className="about container bg-gray-100 py-16 px-8" id="about">
           <h2 className="text-3xl font-bold text-center mb-5">{t('servicesTitle')}</h2>
           <h4 className="text-2xl text-center mb-8 ">{t('servicesDescription')}</h4>
           <div className="cards grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
 
         {/*Div de works*/}
-        <div className="projects flex flex-col justify-center items-center w-full">
+        <div className="projects flex flex-col justify-center items-center w-full" id="projects">
           <div className="container py-16 px-8 flex justify-center flex-col">
             <h2 className="text-3xl font-bold text-center mb-5">{t('projects')}</h2>
             <div className="slider-container flex justify-center w-full">
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
 
         {/*Div de contacto*/}
-        <div className="contact-container flex w-full justify-center">
+        <div className="contact-container flex w-full justify-center" id="contact">
           
             <section className="contact-section flex flex-col items-center">
               <div className="container py-16 px-8 flex justify-center flex-col items-center">

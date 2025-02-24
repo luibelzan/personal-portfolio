@@ -2,40 +2,53 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import LanguageSwitcher from './languageSwitcher';
+import {useTranslations} from 'next-intl';
 
-const NavBar = () => {
+
+export default function Navbar() {    
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
+
+    const t = useTranslations('Navbar');
 
     return (
         <nav className="bg-gray-800 p-4">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo or name */}
                 <Link href="/">
-                    SoftForge Solutions
+                    <img className='w-48' src='/logo.png'/>
                 </Link>
         
                 {/* Menu button for mobile */}
-                <div className="md:hidden">
+                <div className="max-md:block md:hidden">
                     <button onClick={toggleMenu} className="text-white">
                         {isOpen ? 'Cerrar' : 'Menú'}
                     </button>
                 </div>
         
-                {/* Main menu - Mobile and Desktop */}
-                <ul className={`space-x-6 ${isOpen ? 'block' : 'hidden'} md:flex`}>
-                    <li>
-                        <Link href="/">Inicio</Link>
+                {/* Menú principal - Móvil y Desktop */}
+                <ul className={`md:flex md:flex-row items-center 
+                    ${isOpen ? 'flex' : 'hidden'} 
+                    flex-col absolute md:static 
+                    top-16 left-1/2 transform max-md:-translate-x-1/2 
+                    bg-gray-800 w-3/4 md:w-auto 
+                    rounded-lg p-4 md:p-0 z-50 text-center`}>
+                    <li className="max-md:py-2 max-md:w-full">
+                        <Link href="/" className='max-md:m-0'>{t("home")}</Link>
                     </li>
-                    <li>
-                        <Link href="/about">Sobre mí</Link>
+                    <li className="max-md:py-2 max-md:w-full">
+                        <Link href="#about" className='max-md:m-0'>{t("about")}</Link>
                     </li>
-                    <li>
-                        <Link href="/projects">Proyectos</Link>
+                    <li className="max-md:py-2 max-md:w-full">
+                        <Link href="#projects" className='max-md:m-0'>{t("projects")}</Link>
                     </li>
-                    <li>
-                        <Link href="/contact">Contacto</Link>
+                    <li className="max-md:py-2 max-md:w-full">
+                        <Link href="#contact" className='max-md:m-0'>{t("contact")}</Link>
+                    </li>
+                    <li className="max-md:py-2 max-md:w-full flex justify-center">
+                        <LanguageSwitcher />
                     </li>
                 </ul>
             </div>
@@ -43,4 +56,3 @@ const NavBar = () => {
     );
     };
 
-export default NavBar;

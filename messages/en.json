@@ -65,5 +65,12 @@
       "SOAPShortDescription": "Service responsible for automating the reading of smart electricity meters.",
       "SOAPLongDescription1": "SOAP Meter Flow is a service developed with TypeScript and compatible with multiple PostgreSQL databases. The service utilizes asynchronous functions to automate the reading of meters for each client in parallel.",
       "SOAPLongDescription2": "The execution flow of the service is as follows. First, using an Express.js server, we receive the SOAP web services containing the information sent by the smart meter. The next step is to store each received message in the corresponding client's database. Afterward, we implement an algorithm that detects which meters have not sent information on a specific date. Finally, we request the missing information for that particular date via Web Services, so that if we retrieve the data, it is stored in the database, and the previous algorithm is re-executed to check that the information has been retrieved successfully."
+    },
+
+    "Navbar": {
+      "home": "Home",
+      "about": "About Us",
+      "projects": "Projects",
+      "contact": "Contact"
     }
   }
