@@ -35,8 +35,8 @@ export default async function LocaleLayout({children, params }: { children: Reac
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
       </head>
       <body>
-        <NavBar/>
         <NextIntlClientProvider messages={messages}>
+        <NavBar/>
           {children}
         </NextIntlClientProvider>
         <div className="footer-container w-full">

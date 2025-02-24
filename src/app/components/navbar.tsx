@@ -3,11 +3,15 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import LanguageSwitcher from './languageSwitcher';
+import {useTranslations} from 'next-intl';
 
-const NavBar = () => {
+
+export default function Navbar() {    
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
+
+    const t = useTranslations('Navbar');
 
     return (
         <nav className="bg-gray-800 p-4">
@@ -32,16 +36,16 @@ const NavBar = () => {
                     bg-gray-800 w-3/4 md:w-auto 
                     rounded-lg p-4 md:p-0 z-50 text-center`}>
                     <li className="max-md:py-2 max-md:w-full">
-                        <Link href="/" className='max-md:m-0'>Inicio</Link>
+                        <Link href="/" className='max-md:m-0'>{t("home")}</Link>
                     </li>
                     <li className="max-md:py-2 max-md:w-full">
-                        <Link href="#about" className='max-md:m-0'>Sobre mí</Link>
+                        <Link href="#about" className='max-md:m-0'>{t("about")}</Link>
                     </li>
                     <li className="max-md:py-2 max-md:w-full">
-                        <Link href="#projects" className='max-md:m-0'>Proyectos</Link>
+                        <Link href="#projects" className='max-md:m-0'>{t("projects")}</Link>
                     </li>
                     <li className="max-md:py-2 max-md:w-full">
-                        <Link href="#contact" className='max-md:m-0'>Contacto</Link>
+                        <Link href="#contact" className='max-md:m-0'>{t("contact")}</Link>
                     </li>
                     <li className="max-md:py-2 max-md:w-full flex justify-center">
                         <LanguageSwitcher />
@@ -52,4 +56,3 @@ const NavBar = () => {
     );
     };
 
-export default NavBar;

@@ -65,5 +65,12 @@
     "SOAPShortDescription": "Servicio encargado de automatizar la lectura de los contadores inteligentes de la luz.",
     "SOAPLongDescription1": "SOAP Meter Flow es un servicio desarrollado con TypeScript y compatible con múltiples bases de datos PostgreSQL. El servicio hace uso de funciones asíncronas para completar la automatización de la lectura de los contadores para cada cliente en paralelo.",
     "SOAPLongDescription2": "La ejecución del servicio es la siguiente. Primero, con un servidor Express.js recibimos los web services con SOAP que contienen la información enviada por el contador inteligente. El siguiente paso es almacenar cada uno de los mensajes recibidos en la base de datos del cliente correspondiente. A continuación, implementamos un algoritmo que se encarga de detectar qué contadores no han enviado información en una fecha determinada. Por último, solicitamos la información que nos falta para esa fecha concreta a través de Webservices, de forma que si recuperamos la información se almacenará en la base de datos y se vuelve a ejecutar el algoritmo anterior para comprobar que hemos recuperado la información."
-  }
+  },
+
+  "Navbar": {
+      "home": "Inicio",
+      "about": "Sobre Nosotros",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    }
 }
