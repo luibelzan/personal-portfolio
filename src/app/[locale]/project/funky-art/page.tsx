@@ -16,11 +16,11 @@ export default function FunkyArt() {
                 </div>
 
                 <div className="flex justify-center flex-col items-center">
-                    <h2 className="project-short-description pb-4 max-md:text-xl sm:text-2xl md:text-5xl max-md:pt-9 max-md:pb-9 md:pt-40 font-semibold text-center">{t('funkyArtShortDescription')}</h2>
+                    <h2 className="project-short-description pb-4 max-md:text-xl sm:text-2xl md:text-5xl max-md:pt-9 max-md:pb-9 md:pt-40 text-center">{t('funkyArtShortDescription')}</h2>
                     <div className="flex flex-col items-center">
                         <img className="collage" src="/funkyart/collage5.png"></img>\
-                        <p className="project-description text-xl max-md:text-sm max-md:text-center text-start pb-4 text-black">{t('funkyArtLongDescription')}</p>
-                        <img src="/funkyart/nft.png" className="pb-20"></img>
+                        <p className="project-description text-xl max-md:text-sm max-md:text-center max-md:w-full text-start pb-4 text-black">{t('funkyArtLongDescription')}</p>
+                        <img src="/funkyart/nft.png" className="pb-0"></img>
                     </div>
                 </div>
                 

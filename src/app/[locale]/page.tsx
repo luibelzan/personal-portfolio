@@ -61,7 +61,7 @@ export default function Home() {
         <div className="about container bg-gray-100 py-16 px-8" id="about">
           <h2 className="text-3xl font-bold text-center mb-5">{t('servicesTitle')}</h2>
           <h4 className="text-2xl text-center mb-8 ">{t('servicesDescription')}</h4>
-          <div className="cards grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="cards grid grid-cols-1 md:grid-cols-3 gap-8 max-md:flex max-md:items-center">
           {services.map((service, index) => (
               <ServiceCard
                 key={index}

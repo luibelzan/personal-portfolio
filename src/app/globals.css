@@ -137,8 +137,6 @@ h3 em {
 }
 
 .underline {
-  border: 2px solid white;
-  border-radius: 20px;               /* Elimina el borde predeterminado */
      /* Línea de 2px de grosor y color azul */
     margin: 10px 0;             /* Espaciado alrededor de la línea */
     width: 100%;                /* Asegura que la línea ocupe todo el ancho disponible */
@@ -146,9 +144,6 @@ h3 em {
 
 .serviceCard p {
   color: #ffffff; /* Azul claro para contraste */
-  margin-right: 1.3rem; /* Sin márgenes adicionales */
-  margin-left: 1.3rem;
-  line-height: 1.8; /* Mejora la legibilidad */
   padding-top: 1.3rem;
 }
 
@@ -481,7 +476,7 @@ footer p span {
   margin-right: auto;
   text-align: center;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.3em;
   display: block;
   padding-top: 10rem;
@@ -527,6 +522,12 @@ footer p span {
 
 .box3 span {
   background: url('../../public/morsan/morsan.png');
+  background-size: 450%; /* Ajusta para cubrir el contenedor */
+  background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
+}
+
+.box4 span {
+  background: url('../../public/soap/soap.png');
   background-size: 450%; /* Ajusta para cubrir el contenedor */
   background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
 }
