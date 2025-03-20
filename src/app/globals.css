@@ -292,7 +292,7 @@ h4 {
 
 .project-card {
   border: 1px solid gray;
-  height: fit-content;
+  min-height: 49rem;
 }
 
 .image-container {
@@ -348,7 +348,9 @@ footer p span {
 }
 
 @media (max-width: 1440px) {
- 
+  .project-card {
+    min-height: 51rem !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -395,6 +397,10 @@ footer p span {
   .contact-info {
     text-align: center;
   }
+
+  .project-card {
+    min-height: 46rem !important; /* O el valor que necesites */
+  }
 }
 
 @media (max-width: 430px) {
@@ -413,6 +419,10 @@ footer p span {
   .contact-info {
     font-size: 1rem;
     text-align: center;
+  }
+
+  .project-card {
+    min-height: 27rem !important;
   }
 }
 
@@ -435,6 +445,10 @@ footer p span {
   .contact-socials {
     max-width: 2.5rem;
   }
+
+  .project-card {
+    min-height: 27rem !important;
+  }
 }
 
 @media (max-width: 320px) {
@@ -444,6 +458,18 @@ footer p span {
 
   .image-container {
     height: 15vh !important;
+  }
+
+  .project-card {
+    min-height: 21rem !important;
+  }
+
+  .navigation-buttons {
+    margin-top: 0rem !important;
+  }
+
+  .currProject {
+    margin-top: 0rem !important;
   }
 }
 

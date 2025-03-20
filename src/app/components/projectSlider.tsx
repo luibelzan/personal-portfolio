@@ -56,13 +56,13 @@ const ProjectSlider = () => {
         <img
           src={currentProject.image}
           alt={currentProject.title}
-          className="project-image w-full object-cover rounded-3xl"
+          className="project-image w-full object-cover rounded-3xl border-1 border-blue-800 shadow-lg"
         />
       </div>
-      <h3 className="md:text-4xl max-md:text-xl font-extrabold text-black mt-4 pb-4">
+      <h3 className="currProject md:text-4xl max-md:text-xl font-extrabold text-black mt-4">
         {currentProject.title}
       </h3>
-      <p className="text-black text-lg max-md:text-sm italic max-w-xl mx-auto px-2">
+      <p className="text-black text-xl max-md:text-xs italic max-w-xl mx-auto px-2">
         {currentProject.description} {" "}
         <Link href={`/${locale}${currentProject.url}`} className="text-blue-500 underline">
           {t("more")}
