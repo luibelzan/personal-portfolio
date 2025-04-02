@@ -1,0 +1,76 @@
+{
+    "HomePage": {
+      "pageDescription": "Design, Development and Maintenance of customized software solutions.",
+      "servicesTitle": "Custom software solutions",
+      "servicesDescription": "We boost your business with cutting-edge technologies",
+      "servicesButton": "Discover more",
+      "serviceOffer": "What we offer",
+      "closeModal": "Close",
+      
+      "service1Title": "Custom Software",
+      "service1Description": "We create software specifically designed to meet the needs of your business. We work with you to transform your ideas into technological tools that drive your productivity and growth.",
+      "service1DetailedInfo": "Specialized in creating the architecture and logic that powers your application from the core. This service includes the design, development, and maintenance of the system operating behind the scenes, ensuring optimal performance, security, and reliability.",
+      "service1Services": "Automation of processes and tasks to optimize resources and time.;Efficient integration of databases, ensuring quick and secure access to information.;Creation of robust APIs for seamless interaction between the client and the server.;Implementation of scalable systems that can grow alongside your business.",
+      "service1TitleTools": "Programming languages",
+
+      "service2Title": "Web development",
+      "service2Description": "We transform your online presence with a personalized and professional web design. We specialize in creating modern, functional, and user-friendly websites tailored to your specific needs.",
+      "service2DetailedInfo": "Web development focuses on creating interactive and engaging user interfaces, where the user experience is key. We transform designs into functional digital experiences using technologies like HTML, CSS, JavaScript, and modern frameworks such as React or Angular.",
+      "service2Services": "Creation of fast and efficient websites through performance optimization.;Implementation of animations, transitions, and visual effects that enhance the user experience.;Design of interfaces adaptable to different devices and screen sizes.",
+      "service2TitleTools": "Development frameworks",
+
+      "service3Title": "Project management",
+      "service3Description": "We maximize the efficiency of your projects with agile, flexible, and results-driven management. We focus on applying agile methodologies to develop efficient, high-quality software solutions, ensuring continuous value delivery.",
+      "service3DetailedInfo": "Project management is key to ensuring the success of any technological development. We combine agile and traditional practices to guarantee efficient planning, smooth execution, and successful delivery. We ensure that each stage of the project is carefully managed and aligned with the client's expectations and market needs.",
+      "service3Services": "Clear definition of objectives, milestones, and timelines to ensure effective execution.;Implementation of agile methodologies such as Scrum for flexible and client-focused management.;Supervision of deliverables to ensure they meet high standards of quality and functionality.",
+      "service3TitleTools": "Management tools",
+
+      "projects": "Projects",
+      "contactSectionTitle": "Contact us",
+      "contactSectionDescription": "Do you want to collaborate or have any questions? Feel free to get in touch."
+    },
+
+    "Projects": {
+      "project1Description": "Web3 platform for minting digital assets on the Ethereum Blockchain.",
+      "project2Description": "Personal website of Nacho Trelles, a firefighter passionate about literature.",
+      "project3Description": "Online store for custom clothing.",
+      "project4Description": "Service to automate the reading of smart electricity meters.",
+      "more": "See more",
+      "nextProject": "Next",
+      "backProject": "Back"
+    },
+
+    "Footer": {
+      "footerSectionTitle": "© 2024 SoftForge Solutions. All rights reserved.",
+      "footerSectionDescription1": "Designed with ",
+      "footerSectionDescription2": " and dedication."
+    },
+
+    "FunkyArt": {
+      "funkyArtShortDescription": "A Web3 platform for minting digital assets on the Ethereum Blockchain.",
+      "funkyArtLongDescription": "Funky Art is an innovative platform developed as a final degree project that allows users to mint NFTs on the blockchain in a simple way. Implemented using JavaScript, Next.js, and Solidity, this application combines a modern design with advanced Web3 functionalities such as wallet connection, smart contract management, and secure deployment on the blockchain. The main goal is to provide an intuitive and efficient experience for creators and collectors in the NFT ecosystem."
+    },
+
+    "Morsan": {
+      "morsanShortDescription": "Online store specializing in customized clothing",
+      "morsanLongDescription": "With a modern and easy-to-navigate design, the website allows users to explore a wide variety of customizable products, from t-shirts and hoodies to accessories. Ideal for those looking to express their individuality through fashion, Morsan.es combines high-quality materials with creative customization options for a unique shopping experience."
+    },
+
+    "NachoTrelles": {
+      "nachoShortDescription": "A personal website aimed at showcasing the career, projects, and skills of Nacho Trelles.",
+      "nachoLongDescription": "The website functions as an online portfolio built with WordPress, where you can find information about Nacho Trelles' experience, standout works, and professional services or contact details, as well as questionnaires for firefighter preparation. It incorporates visually appealing elements and a clear focus on intuitive navigation to highlight the author's strengths and capabilities."
+    },
+
+    "SOAPMeterFlow": {
+      "SOAPShortDescription": "Service responsible for automating the reading of smart electricity meters.",
+      "SOAPLongDescription1": "SOAP Meter Flow is a service developed with TypeScript and compatible with multiple PostgreSQL databases. The service utilizes asynchronous functions to automate the reading of meters for each client in parallel.",
+      "SOAPLongDescription2": "The execution flow of the service is as follows. First, using an Express.js server, we receive the SOAP web services containing the information sent by the smart meter. The next step is to store each received message in the corresponding client's database. Afterward, we implement an algorithm that detects which meters have not sent information on a specific date. Finally, we request the missing information for that particular date via Web Services, so that if we retrieve the data, it is stored in the database, and the previous algorithm is re-executed to check that the information has been retrieved successfully."
+    },
+
+    "Navbar": {
+      "home": "Home",
+      "about": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  }
