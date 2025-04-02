@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "../globals.css";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
@@ -18,7 +17,7 @@ export default async function LocaleLayout({children, params }: { children: Reac
   
   const { locale } = await params;
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as typeof routing.locales[number])) {
     notFound();
   }
  

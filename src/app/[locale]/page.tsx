@@ -1,10 +1,8 @@
 "use client"
-import styles from "./page.module.css";
 import ServiceCard from "../components/serviceCard";
 import ProjectSlider from "../components/projectSlider";
 import ScaleFactorCalculator from "../components/scaleFactorCalculator";
 import {useTranslations} from 'next-intl';
-import {Link} from '@/i18n/routing';
 
 
 export default function Home() {
