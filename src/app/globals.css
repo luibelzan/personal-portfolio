@@ -137,8 +137,6 @@ h3 em {
 }
 
 .underline {
-  border: 2px solid white;
-  border-radius: 20px;               /* Elimina el borde predeterminado */
      /* Línea de 2px de grosor y color azul */
     margin: 10px 0;             /* Espaciado alrededor de la línea */
     width: 100%;                /* Asegura que la línea ocupe todo el ancho disponible */
@@ -146,9 +144,6 @@ h3 em {
 
 .serviceCard p {
   color: #ffffff; /* Azul claro para contraste */
-  margin-right: 1.3rem; /* Sin márgenes adicionales */
-  margin-left: 1.3rem;
-  line-height: 1.8; /* Mejora la legibilidad */
   padding-top: 1.3rem;
 }
 
@@ -297,7 +292,7 @@ h4 {
 
 .project-card {
   border: 1px solid gray;
-  height: fit-content;
+  min-height: 49rem;
 }
 
 .image-container {
@@ -353,7 +348,9 @@ footer p span {
 }
 
 @media (max-width: 1440px) {
- 
+  .project-card {
+    min-height: 51rem !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -400,6 +397,10 @@ footer p span {
   .contact-info {
     text-align: center;
   }
+
+  .project-card {
+    min-height: 46rem !important; /* O el valor que necesites */
+  }
 }
 
 @media (max-width: 430px) {
@@ -418,6 +419,10 @@ footer p span {
   .contact-info {
     font-size: 1rem;
     text-align: center;
+  }
+
+  .project-card {
+    min-height: 27rem !important;
   }
 }
 
@@ -440,6 +445,10 @@ footer p span {
   .contact-socials {
     max-width: 2.5rem;
   }
+
+  .project-card {
+    min-height: 27rem !important;
+  }
 }
 
 @media (max-width: 320px) {
@@ -450,6 +459,18 @@ footer p span {
   .image-container {
     height: 15vh !important;
   }
+
+  .project-card {
+    min-height: 19rem !important;
+  }
+
+  .navigation-buttons {
+    margin-top: 0rem !important;
+  }
+
+  .currProject {
+    margin-top: 0rem !important;
+  }
 }
 
 /* PROJECT PAGE STYLES */
@@ -459,7 +480,6 @@ footer p span {
 }
 
 .project-name {
-  font-size: 4rem; /* Ajusta según necesidad */
   font-weight: 800;
   text-align: center;
   color: transparent;
@@ -468,7 +488,6 @@ footer p span {
   background-clip: text;
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.05em;
-  margin-top: 2rem;
   text-transform: uppercase;
 }
 
@@ -478,12 +497,12 @@ footer p span {
 }
 
 .project-short-description {
-  max-width: 75%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.3em;
   display: block;
   padding-top: 10rem;
@@ -533,6 +552,12 @@ footer p span {
   background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
 }
 
+.box4 span {
+  background: url('../../public/soap/soap.png');
+  background-size: 450%; /* Ajusta para cubrir el contenedor */
+  background-position: calc(-100% * var(--i)) ; /* Escala dinámicamente */
+}
+
 /* Efectos al hover */
 .shared-style:hover span:nth-child(odd) {
   transform: skewY(25deg);
@@ -567,6 +592,5 @@ footer p span {
   width: 75%;
   letter-spacing: .5px;
   margin: 0 auto 14px;
-  padding-bottom: 5rem;
 }
 
